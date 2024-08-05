@@ -2,6 +2,7 @@
 import { personalData } from '@/utils/data/personal-data';
 import Link from 'next/link';
 import Image from "next/Image"
+// import contactImg from "/contact-form.jpg"
 import { BiLogoLinkedin } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
 import { IoLogoGithub, IoMdCall } from "react-icons/io";
@@ -20,11 +21,12 @@ function ContactSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
         
         <Image
-        src="/contact-form.jpg"
-        alt="Hero"
+        src="/contact-form.svg"
+        alt="Contact Me"
         width={350}
-        height={350}
+        height={300}
         className=""
+        style={{borderRadius:"50px 50px 0 50px"}}
       />
 
         <div className="lg:w-3/4 ">
