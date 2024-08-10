@@ -1,7 +1,7 @@
 {
-  "name": "personal-portfolio",
+  "name": "jitesh-portfolio-site",
   "description": "Portfolio of Jitesh Chejara",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,16 +9,12 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "dependencies": {
-    "@emailjs/browser": "^4.3.1",
-    "@next/third-parties": "^14.1.3",
-    "axios": "^1.6.8",
+  "dependencies": {    
     "lottie-react": "^2.4.0",
     "next": "^14.1.3",
     "react": "latest",
     "react-dom": "latest",
     "react-fast-marquee": "^1.6.2",
-    "react-google-recaptcha": "^3.1.0",
     "react-icons": "^4.11.0",
     "react-toastify": "^10.0.4"
   },
@@ -31,3 +27,4 @@
     "tailwindcss": "latest"
   }
 }
+

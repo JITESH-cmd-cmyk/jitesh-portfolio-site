@@ -1,11 +1,11 @@
 // @flow strict
  
 import Marquee from "react-fast-marquee";
+import { apiData } from "@/utils/data/apiData";
 
 function Services() {
-
-  const servicesList = ["Email Management", "Documentation", "Scheduling", "Data Entry", "Social media management", 'Customer Service', 'Research', "Product Designing", "Product Marketing", "Task Mangement", "Travel Arrangements", "Graphic Designing", "Content Writing", "Site Management" ];
-
+  const servicesList = apiData.servicesList;
+  
   return (
     <div id="services" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
