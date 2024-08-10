@@ -1,6 +1,6 @@
 // @flow strict
 
-import { personalData } from "@/utils/data/personal-data";
+import { apiData } from "@/utils/data/apiData";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
@@ -10,6 +10,7 @@ import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
 
 function HeroSection() {
+  const personalData = apiData.personalData;
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
       <Image

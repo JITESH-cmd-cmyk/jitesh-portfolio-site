@@ -1,5 +1,5 @@
 // @flow strict
-import { personalData } from '@/utils/data/personal-data';
+import { apiData } from '@/utils/data/apiData';
 import Link from 'next/link';
 import Image from "next/image"
 // import contactImg from "/contact-form.jpg"
@@ -10,6 +10,7 @@ import { MdAlternateEmail } from "react-icons/md";
 
 
 function ContactSection() {
+  const contactData = apiData.contactData;
   return (
     <div id="contact" className="my-12 lg:my-16 relative mt-24 text-white">
       <div className="hidden lg:flex flex-col items-center absolute top-24 -right-8">
@@ -36,7 +37,7 @@ function ContactSection() {
                 className="bg-[#8b98a5] p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
                 size={36}
               />
-              <span>{personalData.email}</span>
+              <span>{contactData.email}</span>
             </p>
             <p className="text-sm md:text-xl flex items-center gap-3">
               <IoMdCall
@@ -44,7 +45,7 @@ function ContactSection() {
                 size={36}
               />
               <span>
-                {personalData.phone}
+                {contactData.phone}
               </span>
             </p>
             <p className="text-sm md:text-xl flex items-center gap-3">
@@ -53,18 +54,18 @@ function ContactSection() {
                 size={36}
               />
               <span>
-                {personalData.address}
+                {contactData.address}
               </span>
             </p>
           </div>
           <div className="mt-8 lg:mt-16 flex items-center gap-5 lg:gap-10">
-            <Link target="_blank" href={personalData.github}>
+            <Link target="_blank" href={contactData.github}>
               <IoLogoGithub
                 className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
                 size={48}
               />
             </Link>
-            <Link target="_blank" href={personalData.linkedIn}>
+            <Link target="_blank" href={contactData.linkedIn}>
               <BiLogoLinkedin
                 className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
                 size={48}
