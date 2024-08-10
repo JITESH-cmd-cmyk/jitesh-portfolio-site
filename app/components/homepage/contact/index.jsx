@@ -1,7 +1,7 @@
 // @flow strict
 import { apiData } from '@/utils/data/apiData';
 import Link from 'next/link';
-import Image from "next/Image"
+import Image from "next/image"
 // import contactImg from "/contact-form.jpg"
 import { BiLogoLinkedin } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
