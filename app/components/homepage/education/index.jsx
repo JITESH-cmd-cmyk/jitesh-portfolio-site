@@ -5,7 +5,7 @@ import { apiData } from "@/utils/data/apiData";
 import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
-import lottieFile from '/public/lottie/study.json';
+import lottieFile from '/lottie/study.json';
 
 function Education() {
   const educationData = apiData.educationData;
