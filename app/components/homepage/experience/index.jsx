@@ -1,6 +1,6 @@
 // @flow strict
 
-import { experiences } from "@/utils/data/experience";
+import { apiData } from "@/utils/data/apiData";
 import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../../helper/animation-lottie";
@@ -8,6 +8,7 @@ import GlowCard from "../../helper/glow-card";
 import experience from '/public/lottie/code.json';
 
 function Experience() {
+  const experienceData = apiData.experienceData;
   return (
     <div id="experience" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <Image
@@ -39,7 +40,7 @@ function Experience() {
           <div>
             <div className="flex flex-col gap-6">
               {
-                experiences.map(experience => (
+                experienceData.map(experience => (
                   <GlowCard key={experience.id} identifier={`experience-${experience.id}`}>
                     <div className="p-3 relative">
                       <Image
